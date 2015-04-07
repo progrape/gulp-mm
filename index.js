@@ -11,7 +11,6 @@ var intercept = require('gulp-intercept');
 var uglify = require('./lib/uglify');
 var server = require('./lib/server');
 var inline = require('./lib/inline');
-var live = require('./lib/live');
 var sprite = require('./lib/sprite');
 
 
@@ -48,10 +47,6 @@ var mm = {
      * inline
      */
     inline: inline,
-    /**
-     * live
-     */
-    live: live,
     /**
      * sprite
      */
