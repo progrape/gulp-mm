@@ -7,6 +7,7 @@ var less = require('gulp-less');
 var rename = require('gulp-rename');
 var replace = require('gulp-replace');
 var intercept = require('gulp-intercept');
+var gif = require('gulp-if');
 
 var uglify = require('./lib/uglify');
 var server = require('./lib/server');
@@ -35,6 +36,10 @@ var mm = {
      * gulp-intercept
      */
     intercept: intercept,
+    /**
+     * gulp-if
+     */
+    gif: gif,
     /**
      * uglify
      */
