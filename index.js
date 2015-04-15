@@ -8,11 +8,13 @@ var rename = require('gulp-rename');
 var replace = require('gulp-replace');
 var intercept = require('gulp-intercept');
 var gif = require('gulp-if');
+var argv = require('yargs').argv;
 
 var uglify = require('./lib/uglify');
 var server = require('./lib/server');
 var inline = require('./lib/inline');
 var sprite = require('./lib/sprite');
+var encode = require('./lib/encode');
 
 
 var mm = {
@@ -37,6 +39,10 @@ var mm = {
      */
     intercept: intercept,
     /**
+     * argv
+     */
+    argvs: argv,
+    /**
      * gulp-if
      */
     gif: gif,
@@ -55,7 +61,11 @@ var mm = {
     /**
      * sprite
      */
-    sprite: sprite
+    sprite: sprite,
+    /**
+     * encode
+     */
+    encode: encode
 };
 
 
