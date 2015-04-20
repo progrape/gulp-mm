@@ -15,6 +15,7 @@ var server = require('./lib/server');
 var inline = require('./lib/inline');
 var sprite = require('./lib/sprite');
 var encode = require('./lib/encode');
+var i18n = require('./lib/i18n');
 
 
 var mm = {
@@ -65,7 +66,11 @@ var mm = {
     /**
      * encode
      */
-    encode: encode
+    encode: encode,
+    /**
+     * i18n
+     */
+    i18n: i18n
 };
 
 
