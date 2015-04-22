@@ -15,6 +15,7 @@
   "dependencies": {
     "art-template": "~3.0.3",
     "async-replace": "^1.0.0",
+    "bin-pack": "^1.0.1",
     "clean-css": "^2.2.20",
     "express": "^4.10.4",
     "gulp-if": "^1.2.5",
