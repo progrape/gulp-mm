@@ -6,11 +6,12 @@ var watch = require('gulp-watch');
 var less = require('gulp-less');
 var rename = require('gulp-rename');
 var replace = require('gulp-replace');
+var minify = require('gulp-minify-css');
+var uglify = require('gulp-uglify');
 var intercept = require('gulp-intercept');
 var gif = require('gulp-if');
 var argv = require('yargs').argv;
 
-var uglify = require('./lib/uglify');
 var server = require('./lib/server');
 var inline = require('./lib/inline');
 var sprite = require('./lib/sprite');
@@ -51,6 +52,10 @@ var mm = {
      * uglify
      */
     uglify: uglify,
+    /**
+     * minify
+     */
+    minify: minify,
     /**
      * server with socket
      */
