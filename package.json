@@ -1,6 +1,6 @@
 {
   "name": "gulp-mm",
-  "version": "1.5.4",
+  "version": "1.5.6",
   "description": "web rebuild dev tool",
   "main": "index.js",
   "scripts": {
