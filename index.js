@@ -6,7 +6,6 @@ var watch = require('gulp-watch');
 var less = require('gulp-less');
 var rename = require('gulp-rename');
 var replace = require('gulp-replace');
-var uglify = require('gulp-uglify');
 var intercept = require('gulp-intercept');
 var gif = require('gulp-if');
 var argv = require('yargs').argv;
@@ -16,6 +15,7 @@ var inline = require('./lib/inline');
 var sprite = require('./lib/sprite');
 var encode = require('./lib/encode');
 var i18n = require('./lib/i18n');
+var uglify = require('./lib/uglify');
 
 
 var mm = {
