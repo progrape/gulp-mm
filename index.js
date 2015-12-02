@@ -8,9 +8,9 @@ var rename = require('gulp-rename');
 var replace = require('gulp-replace');
 var intercept = require('gulp-intercept');
 var gif = require('gulp-if');
+var server = require('server-mm');
 var argv = require('yargs').argv;
 
-var server = require('./lib/server');
 var inline = require('./lib/inline');
 var sprite = require('./lib/sprite');
 var encode = require('./lib/encode');
